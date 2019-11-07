@@ -1,0 +1,704 @@
+INFO:root:stripe-airbnb-cruise-doordash-coinbase-instacart-dropbox-ginkgo bioworks-gusto-flexport-rappi-brex-reddit-gitlab-pagerduty-checkr-segment-docker-scale-faire-twitch-plangrid-mixpanel-amplitude-optimizely-boom supersonic-grin-meesho-algolia-goat-zapier-messagebird-standard cognition-memebox-embark-helion energy-equipmentshare-sendbird-rescale-gocardless-rigetti computing-razorpay-north-relativity space-podium-benchling-ironclad-newfront-influxdata-webflow-people.ai-weebly-xendit-matterport-easypost-sift-the athletic-mattermost-wepay-vidyard-weave-nurx-proxy-heap-payfazz-memsql-fivetran-rippling-clever-heroku-fivestars-coreos-cleartax-quero education-ridecell-hellosign-grubmarket-lattice-unbabel-athelas inc.-oh my green-lever-atrium-zeus-front-le tote-shipbob-snapdocs-gitprime-scribd-guesty-axoni-lob-notable-atomwise-flutterwave-panorama education-futureadvisor-sfox-lambda school-zerodown
+INFO:results:stripe
+INFO:results:airbnb
+INFO:results:cruise
+INFO:results:doordash
+INFO:results:coinbase
+INFO:results:instacart
+INFO:results:dropbox
+INFO:results:ginkgo bioworks
+INFO:results:gusto
+INFO:results:flexport
+INFO:results:rappi
+INFO:results:brex
+INFO:results:reddit
+INFO:results:gitlab
+INFO:results:pagerduty
+INFO:results:checkr
+INFO:results:segment
+INFO:results:docker
+INFO:results:scale
+INFO:results:faire
+INFO:results:twitch
+INFO:results:plangrid
+INFO:results:mixpanel
+INFO:results:amplitude
+INFO:results:optimizely
+INFO:results:boom supersonic
+ERROR:root:HTTPSConnectionPool(host='www.boomsupersonic.com', port=443): Read timed out. (read timeout=30)
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.6/http/client.py", line 1346, in getresponse
+    response.begin()
+  File "/usr/lib/python3.6/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.6/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py", line 317, in recv_into
+    raise timeout('The read operation timed out')
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 368, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 307, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='www.boomsupersonic.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='www.boomsupersonic.com', port=443): Read timed out. (read timeout=30)
+INFO:results:grin
+INFO:results:meesho
+INFO:results:algolia
+INFO:results:goat
+INFO:results:zapier
+INFO:results:messagebird
+INFO:results:standard cognition
+INFO:results:memebox
+INFO:results:embark
+INFO:results:helion energy
+INFO:results:equipmentshare
+INFO:results:sendbird
+INFO:results:rescale
+INFO:results:gocardless
+INFO:results:rigetti computing
+ERROR:root:HTTPSConnectionPool(host='www.rigetticomputing.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464ee358>, 'Connection to www.rigetticomputing.com timed out. (connect timeout=30)'))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 165, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464ee358>, 'Connection to www.rigetticomputing.com timed out. (connect timeout=30)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.rigetticomputing.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464ee358>, 'Connection to www.rigetticomputing.com timed out. (connect timeout=30)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.rigetticomputing.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464ee358>, 'Connection to www.rigetticomputing.com timed out. (connect timeout=30)'))
+INFO:results:razorpay
+INFO:results:north
+ERROR:urllib3.connection:Certificate did not match expected hostname: www.north.com. Certificate: {'subject': ((('commonName', '*.herokuapp.com'),),), 'subjectAltName': [('DNS', '*.herokuapp.com'), ('DNS', 'herokuapp.com')]}
+ERROR:root:HTTPSConnectionPool(host='www.north.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(CertificateError("hostname 'www.north.com' doesn't match either of '*.herokuapp.com', 'herokuapp.com'",),))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 390, in connect
+    _match_hostname(cert, self.assert_hostname or server_hostname)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 400, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'www.north.com' doesn't match either of '*.herokuapp.com', 'herokuapp.com'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.north.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(CertificateError("hostname 'www.north.com' doesn't match either of '*.herokuapp.com', 'herokuapp.com'",),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.north.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(CertificateError("hostname 'www.north.com' doesn't match either of '*.herokuapp.com', 'herokuapp.com'",),))
+INFO:results:relativity space
+INFO:results:podium
+INFO:results:benchling
+INFO:results:ironclad
+INFO:results:newfront
+ERROR:root:HTTPSConnectionPool(host='www.newfront.com', port=443): Max retries exceeded with url: /careers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7588>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7588>: Failed to establish a new connection: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.newfront.com', port=443): Max retries exceeded with url: /careers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7588>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.newfront.com', port=443): Max retries exceeded with url: /careers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7588>: Failed to establish a new connection: [Errno -2] Name or service not known',))
+INFO:results:influxdata
+INFO:results:webflow
+INFO:results:people.ai
+ERROR:root:HTTPSConnectionPool(host='www.people.ai.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7898>, 'Connection to www.people.ai.com timed out. (connect timeout=30)'))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 165, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7898>, 'Connection to www.people.ai.com timed out. (connect timeout=30)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.people.ai.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7898>, 'Connection to www.people.ai.com timed out. (connect timeout=30)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.people.ai.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e7898>, 'Connection to www.people.ai.com timed out. (connect timeout=30)'))
+INFO:results:weebly
+INFO:results:xendit
+INFO:results:matterport
+INFO:results:easypost
+INFO:results:sift
+INFO:results:the athletic
+INFO:results:mattermost
+INFO:results:wepay
+INFO:results:vidyard
+INFO:results:weave
+ERROR:urllib3.connection:Certificate did not match expected hostname: www.weave.com. Certificate: {'subject': ((('commonName', '*.netsonic.net'),),), 'subjectAltName': [('DNS', '*.netsonic.net'), ('DNS', 'netsonic.net')]}
+ERROR:root:HTTPSConnectionPool(host='www.weave.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(CertificateError("hostname 'www.weave.com' doesn't match either of '*.netsonic.net', 'netsonic.net'",),))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 390, in connect
+    _match_hostname(cert, self.assert_hostname or server_hostname)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 400, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "/usr/lib/python3.6/ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'www.weave.com' doesn't match either of '*.netsonic.net', 'netsonic.net'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.weave.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(CertificateError("hostname 'www.weave.com' doesn't match either of '*.netsonic.net', 'netsonic.net'",),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.weave.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(CertificateError("hostname 'www.weave.com' doesn't match either of '*.netsonic.net', 'netsonic.net'",),))
+INFO:results:nurx
+INFO:results:proxy
+INFO:results:heap
+ERROR:root:HTTPSConnectionPool(host='www.heap.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'ssl3_get_record', 'wrong version number')],)",),))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py", line 472, in wrap_socket
+    cnx.do_handshake()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/OpenSSL/SSL.py", line 1647, in _raise_ssl_error
+    _raise_current_error()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/OpenSSL/_util.py", line 54, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'ssl3_get_record', 'wrong version number')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py", line 478, in wrap_socket
+    raise ssl.SSLError('bad handshake: %r' % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'ssl3_get_record', 'wrong version number')],)",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.heap.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'ssl3_get_record', 'wrong version number')],)",),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.heap.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'ssl3_get_record', 'wrong version number')],)",),))
+INFO:results:payfazz
+INFO:results:memsql
+INFO:results:fivetran
+INFO:results:rippling
+INFO:results:clever
+INFO:results:heroku
+INFO:results:fivestars
+INFO:results:coreos
+INFO:results:cleartax
+INFO:results:quero education
+INFO:results:ridecell
+INFO:results:hellosign
+INFO:results:grubmarket
+INFO:results:lattice
+INFO:results:unbabel
+INFO:results:athelas inc.
+ERROR:root:encoding with 'idna' codec failed (UnicodeError: label empty or too long)
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/encodings/idna.py", line 165, in encode
+    raise UnicodeError("label empty or too long")
+UnicodeError: label empty or too long
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+UnicodeError: encoding with 'idna' codec failed (UnicodeError: label empty or too long)
+INFO:results:oh my green
+INFO:results:lever
+ERROR:root:HTTPSConnectionPool(host='www.lever.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e6470>, 'Connection to www.lever.com timed out. (connect timeout=30)'))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 165, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e6470>, 'Connection to www.lever.com timed out. (connect timeout=30)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.lever.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e6470>, 'Connection to www.lever.com timed out. (connect timeout=30)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.lever.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6464e6470>, 'Connection to www.lever.com timed out. (connect timeout=30)'))
+INFO:results:atrium
+ERROR:root:HTTPSConnectionPool(host='www.atrium.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6463ee710>, 'Connection to www.atrium.com timed out. (connect timeout=30)'))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 165, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6463ee710>, 'Connection to www.atrium.com timed out. (connect timeout=30)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.atrium.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6463ee710>, 'Connection to www.atrium.com timed out. (connect timeout=30)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.atrium.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa6463ee710>, 'Connection to www.atrium.com timed out. (connect timeout=30)'))
+INFO:results:zeus
+ERROR:root:HTTPSConnectionPool(host='www.zeus.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'tlsv1 alert internal error')],)",),))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py", line 472, in wrap_socket
+    cnx.do_handshake()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/OpenSSL/SSL.py", line 1647, in _raise_ssl_error
+    _raise_current_error()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/OpenSSL/_util.py", line 54, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'ssl3_read_bytes', 'tlsv1 alert internal error')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 370, in connect
+    ssl_context=context)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 355, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py", line 478, in wrap_socket
+    raise ssl.SSLError('bad handshake: %r' % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'tlsv1 alert internal error')],)",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.zeus.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'tlsv1 alert internal error')],)",),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.zeus.com', port=443): Max retries exceeded with url: /careers (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'ssl3_read_bytes', 'tlsv1 alert internal error')],)",),))
+INFO:results:front
+ERROR:root:HTTPSConnectionPool(host='www.front.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa646494c88>, 'Connection to www.front.com timed out. (connect timeout=30)'))
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 603, in urlopen
+    chunked=chunked)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 344, in _make_request
+    self._validate_conn(conn)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 843, in _validate_conn
+    conn.connect()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 316, in connect
+    conn = self._new_conn()
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connection.py", line 165, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa646494c88>, 'Connection to www.front.com timed out. (connect timeout=30)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/connectionpool.py", line 641, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/hardik/hardik/lib/python3.6/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.front.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa646494c88>, 'Connection to www.front.com timed out. (connect timeout=30)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<ipython-input-4-57a73ca5bd9c>", line 6, in get_html
+    resp = get(url, stream=True, timeout=30)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/hardik/hardik/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.front.com', port=443): Max retries exceeded with url: /careers (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x7fa646494c88>, 'Connection to www.front.com timed out. (connect timeout=30)'))
+INFO:results:le tote
+INFO:results:shipbob
+INFO:results:snapdocs
+INFO:results:gitprime
+INFO:results:scribd
+INFO:results:guesty
+INFO:results:axoni
+INFO:results:lob
+INFO:results:notable
+INFO:results:atomwise
+INFO:results:flutterwave
+INFO:results:panorama education
+INFO:results:futureadvisor
+INFO:results:sfox
+INFO:results:lambda school
+INFO:results:zerodown
